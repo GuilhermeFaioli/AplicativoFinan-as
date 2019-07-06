@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditDespActivity"
+    android:orientation="vertical"
+    android:background="#c9ddf1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data da despesa:"
+        android:textSize="40px"
+        android:textColor="#000000"/>
+
+    <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:inputType="date"-->
+        <!--android:ems="10"-->
+        <!--android:id="@+id/editData"-->
+        <!--android:hint="Data"/>-->
+
+    <com.vicmikhailau.maskededittext.MaskedEditText
+        android:id="@+id/editData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        app:mask="##/##/####"
+        android:inputType="date" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Valor:"
+        android:textSize="40px"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editValor"
+        android:hint="Valor"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Informações da despesa:"
+        android:textSize="40px"
+        android:textColor="#000000"/>
+
+    <Spinner
+        android:id="@+id/spinnerInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonExcluir"
+            style="@style/FirebaseUI.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Excluir" />
+
+        <Button
+            android:id="@+id/buttonAtualizar"
+            style="@style/FirebaseUI.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Atualizar" />
+
+        <Button
+            android:id="@+id/buttonLimpar"
+            style="@style/FirebaseUI.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Limpar" />
+    </LinearLayout>
+
+</LinearLayout>

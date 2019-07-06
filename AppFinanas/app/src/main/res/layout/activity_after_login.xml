@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AfterLoginActivity"
+    android:background="#c9ddf1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/exibeDespesas"
+                style="@style/FirebaseUI.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Despesas" />
+
+            <Button
+                android:id="@+id/exibeRenda"
+                style="@style/FirebaseUI.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Renda" />
+
+            <TextView
+                android:id="@+id/textViewBalanco2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewBalanco3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="70px"
+                android:textStyle="bold"
+                app:fontFamily="monospace" />
+
+            <TextView
+                android:id="@+id/textViewBalanco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="5dp"
+                android:alpha="0.4"
+                android:background="#858585"
+                android:gravity="center_horizontal"
+                android:padding="20dp"
+                android:text="Balanço: R$0.00"
+                android:textColor="#ffffff"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:fontFamily="Serif" />
+
+            <TextView
+                android:id="@+id/textViewUSD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="5dp"
+                android:alpha="0.4"
+                android:background="#858585"
+                android:gravity="center_horizontal"
+                android:padding="20dp"
+                android:text="Valor do USD: R$0.00"
+                android:textColor="#ffffff"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:fontFamily="Serif" />
+
+            <TextView
+                android:id="@+id/textViewEUR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="5dp"
+                android:alpha="0.4"
+                android:background="#858585"
+                android:gravity="center_horizontal"
+                android:padding="20dp"
+                android:text="Valor do EUR: R$0.00"
+                android:textColor="#ffffff"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:fontFamily="Serif" />
+
+            <TextView
+                android:id="@+id/textViewGBP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="5dp"
+                android:alpha="0.4"
+                android:background="#858585"
+                android:gravity="center_horizontal"
+                android:padding="20dp"
+                android:text="Valor do GBP: R$0.00"
+                android:textColor="#ffffff"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:fontFamily="Serif" />
+
+            <TextView
+                android:id="@+id/textViewJPY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="5dp"
+                android:alpha="0.4"
+                android:background="#858585"
+                android:gravity="center_horizontal"
+                android:padding="20dp"
+                android:text="Valor do JPY: R$0.00"
+                android:textColor="#ffffff"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:fontFamily="Serif" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_close_black_24dp"
+        android:onClick="logout"/>
+
+</FrameLayout>

@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "543079520513",
+    "firebase_url": "https://appfinancas-ae164.firebaseio.com",
+    "project_id": "appfinancas-ae164",
+    "storage_bucket": "appfinancas-ae164.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:543079520513:android:71cf08c501f33e85",
+        "android_client_info": {
+          "package_name": "com.ufop.guilherme.appfinanas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "543079520513-1vcl6gp6mmjkkifr9ucidli1r8npdlov.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ufop.guilherme.appfinanas",
+            "certificate_hash": "2ae6977e167c34c91028e8844ac5ba0de3a7ac9d"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClxJlebDUGOxW6mzYZPplwN5x7HUtGTRM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "543079520513-f68dmnpch95auvtat13ic77mheurgevn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

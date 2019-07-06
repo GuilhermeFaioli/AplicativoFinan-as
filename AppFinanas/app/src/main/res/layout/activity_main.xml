@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:background="@drawable/background1"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/Editemail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="33dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="Password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Editemail"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/Editpassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonLogar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="23dp"
+        android:text="Logar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Editpassword"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:text="Cadastro"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonLogar"
+        app:layout_constraintStart_toEndOf="@+id/buttonLogar"
+        tools:ignore="MissingConstraints" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    tools:context=".ExibeRendaActivity"
+    android:background="#c9ddf1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Filtrar por Mês"
+                android:textColor="#000000"
+                android:textSize="40px"
+                android:textStyle="bold"
+                app:fontFamily="monospace" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinnerMonth"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"></Spinner>
+
+                <ImageButton
+                    android:id="@+id/buttonFiltro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_search_black_24dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rendas:"
+                android:textColor="#000000"
+                android:textSize="40px"
+                android:textStyle="bold"
+                app:fontFamily="monospace" />
+
+            <ListView
+                android:id="@+id/ListaRend"
+                android:layout_width="match_parent"
+                android:layout_height="400dp" />
+
+            <TextView
+                android:id="@+id/textViewRend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Renda Total: R$0.00"
+                android:textSize="40px"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                app:fontFamily="monospace" />
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_add_black_24dp"
+        android:onClick="addRend"/>
+
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:onClick="addRend"/>-->
+
+</FrameLayout>
